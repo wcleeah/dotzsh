@@ -20,6 +20,7 @@ PROMPT=$PROMPT'%F{white}%D{%F %H:%M:%S} '
 
 # Sources
 source ~/.zsh/alias/k8s.zsh
+source ~/.zsh/alias/misc.zsh 
 
 # Exports
 export NVM_DIR="$HOME/.nvm"
