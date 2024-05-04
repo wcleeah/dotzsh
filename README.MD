@@ -10,6 +10,7 @@
 - [git-prompt](https://github.com/woefe/git-prompt)
 - zsh native prompt time
 
+![prompt](prompt/prompt_example.png)
 
 ## Plugins
 ### Brew
