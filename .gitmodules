@@ -1,0 +1,6 @@
+[submodule "/Users/chocoup/.zsh/prompt/kube-ps1"]
+	path = /Users/chocoup/.zsh/prompt/kube-ps1
+	url = https://github.com/jonmosco/kube-ps1.git
+[submodule "/Users/chocoup/.zsh/prompt/git-prompt"]
+	path = /Users/chocoup/.zsh/prompt/git-prompt
+	url = https://github.com/woefe/git-prompt.zsh
