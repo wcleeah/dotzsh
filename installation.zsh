@@ -2,13 +2,10 @@
 # supposedly .zshrc is already in place
 
 # Prompt
-## kube-ps1
-git clone https://github.com/jonmosco/kube-ps1.git "$HOME/.zsh/prompt/kube-ps1"
-
-## git
-git clone --depth=1 https://github.com/woefe/git-prompt.zsh ~/.zsh/prompt/git-prompt
+git submodule update --init
 
 # Install brew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Sync brew plugins
 brew bundle --file=Brewfile
