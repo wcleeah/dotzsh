@@ -12,8 +12,20 @@ git submodule update --init
 # Install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# Source all the alias and exports
+source ~/.zshrc
+
 # Sync brew plugins
-brew bundle --file=Brewfile
+## sidenote, the reason to not use Brewfile (brew bundle) is that
+## more plugins will be installed after the installation by the user, and those plugin will not be reflected in the Brewfile
+## which might make it hard to manage
+brew install bat
+brew install diff-so-fancy
+brew install fzf
+brew install kubectx
+brew install wget
+brew install 1password-cli
+brew install zoxide
 
 # Custom config
 ## diff-so-fancy

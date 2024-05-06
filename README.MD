@@ -13,7 +13,7 @@
 
 ## Plugins
 All plugins for now are installed through brew:
-- [bat](https://github.com/fdellwing/zsh-bat)
+- [bat](https://github.com/sharkdp/bat)
 - [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy/tree/next)
 - [fzf](https://github.com/junegunn/fzf)
 - [kubectx](https://github.com/ahmetb/kubectx)

@@ -29,4 +29,4 @@ source ~/.config/op/plugins.sh # 1password
 
 # Init
 eval "$(zoxide init zsh)"
-
+eval "$(fzf --zsh)"
