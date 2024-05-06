@@ -47,3 +47,4 @@ git config --global color.diff.whitespace "red reverse"
 
 echo "All the auto configurable stuffs is installed, please config yourself for the following manual configuration"
 echo "1. 1password cli plugins for specific usecase https://developer.1password.com/docs/cli/shell-plugins/"
+echo "2. aws cli https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html"
