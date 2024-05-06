@@ -27,4 +27,10 @@ All plugins for now are installed through brew:
 2. Run .zsh/installation.zsh
 3. Run the manual config part if needed
 
+## Exports
+Add your exports under exports.zsh, it is ignored by git. The reason is based on different usage, plugins installed in different system can be vastly different
+
+## Alias
+All alias is managed under alias/, feel free to add / change the zsh files. A simple pull and re-source will sync the changes.
+
 

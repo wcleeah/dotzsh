@@ -18,20 +18,14 @@ PROMPT=$PROMPT'$(gitprompt) '
 ## time
 PROMPT=$PROMPT'%F{white}%D{%F %H:%M:%S} '
 
+# Paths
+export PATH=/opt/homebrew/bin:$PATH
+
 # Sources
 source ~/.zsh/alias/k8s.zsh
 source ~/.zsh/alias/misc.zsh 
+source ~/.zsh/exports.zsh
 source ~/.config/op/plugins.sh # 1password
-
-# Exports
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Paths
-export PATH=/opt/homebrew/bin:$PATH
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-export PATH=$PATH:$HOME/.dotbare
 
 # Init
 eval "$(zoxide init zsh)"

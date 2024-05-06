@@ -31,10 +31,6 @@ kpf() {
   kubectl port-forward pods/$(kgp | awk -v d=$1 '$0 ~ d{print $1; exit;}') 8022:22
 }
 
-bencode() {
-  echo -n $1 | openssl base64
-}
-
 krestart() {
   kubectl rollout restart deployment/$1
   while true; do kgp | awk -v d=$1 '$0 ~ d{print}'; sleep 2; clear; done

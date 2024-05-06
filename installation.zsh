@@ -1,6 +1,10 @@
 # installation script
 # supposedly .zshrc is already in place
-echo "source .zsh/.zshrc" >> .zshrc
+touch path.zsh
+if [ ! -f ~/.zshrc ]; then
+	touch ~/.zshrc
+fi
+echo "source .zsh/.zshrc" >> ~/.zshrc
 
 # Prompt
 git submodule update --init
