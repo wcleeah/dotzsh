@@ -19,6 +19,7 @@ All plugins for now are installed through brew:
 - [kubectx](https://github.com/ahmetb/kubectx)
 - [wget](https://formulae.brew.sh/formula/wget)
 - [1password-cli](https://developer.1password.com/docs/cli/get-started/#install)
+- [zoxide](https://github.com/ajeetdsouza/zoxide)
 
 
 ## Installation
