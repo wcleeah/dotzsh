@@ -8,12 +8,12 @@ source ~/.zsh/prompt/kube-ps1/kube-ps1.sh
 KUBE_PS1_SYMBOL_ENABLE=false
 KUBE_PS1_PREFIX_COLOR=white
 KUBE_PS1_SUFFIX_COLOR=white
-PROMPT=$PROMPT' $(kube_ps1) '
+PROMPT=$PROMPT' %F{blue}k8s:$(kube_ps1) '
 
 ## git
 ZSH_THEME_GIT_PROMPT_PREFIX="%F{white}["
 ZSH_THEME_GIT_PROMPT_SUFFIX="%F{white}]"
-PROMPT=$PROMPT'$(gitprompt) '
+PROMPT=$PROMPT'%F{magenta}git:$(gitprompt) '
 
 ## time
 PROMPT=$PROMPT'%F{white}%D{%F %H:%M:%S} '
