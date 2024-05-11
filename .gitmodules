@@ -4,3 +4,6 @@
 [submodule "prompt/git-prompt"]
 	path = prompt/git-prompt
 	url = https://github.com/woefe/git-prompt.zsh.git
+[submodule "prompt/zsh-syntax-highlighting"]
+	path = prompt/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git

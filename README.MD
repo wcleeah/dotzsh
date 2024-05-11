@@ -23,10 +23,11 @@ All plugins for now are installed through brew:
 
 
 ## Installation
-1. git clone this repo
-2. Download warp
-3. Run .zsh/installation.zsh
-4. Run the manual config part if needed
+1. git clone this repo into .zsh/
+2. git init and update all submodules
+3. Download warp
+4. Run .zsh/installation.zsh
+5. Run the manual config part if needed
 
 ## Exports
 Add your exports under exports.zsh, it is ignored by git. The reason is based on different usage, plugins installed in different system can be vastly different
