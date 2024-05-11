@@ -7,3 +7,6 @@
 [submodule "prompt/zsh-syntax-highlighting"]
 	path = prompt/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "prompt/eza"]
+	path = prompt/eza
+	url = https://github.com/eza-community/eza.git

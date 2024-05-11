@@ -1,6 +1,6 @@
 # installation script
 # supposedly .zshrc is already in place
-touch path.zsh
+touch exports.zsh
 if [ ! -f ~/.zshrc ]; then
 	touch ~/.zshrc
 fi
@@ -26,6 +26,7 @@ brew install kubectx
 brew install wget
 brew install 1password-cli
 brew install zoxide
+brew install eza 
 
 # Custom config
 ## diff-so-fancy

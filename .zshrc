@@ -16,10 +16,11 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%F{white}]"
 PROMPT=$PROMPT'%F{magenta}git:$(gitprompt) '
 
 ## time
-PROMPT=$PROMPT'%F{white}%D{%F %H:%M:%S}%{$reset_color%}'
+PROMPT=$PROMPT'%F{white}%D{%F %H:%M:%S} %{$reset_color%}'
 
 # Paths
 export PATH=/opt/homebrew/bin:$PATH
+export FPATH="~/.zsh/prompt/eza/completions/zsh:$FPATH"
 
 # Sources
 source ~/.zsh/alias/k8s.zsh
