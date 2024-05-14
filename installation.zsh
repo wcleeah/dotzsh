@@ -27,6 +27,7 @@ brew install wget
 brew install 1password-cli
 brew install zoxide
 brew install eza 
+brew install jq
 
 # Custom config
 ## diff-so-fancy

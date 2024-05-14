@@ -25,6 +25,7 @@ export FPATH="~/.zsh/prompt/eza/completions/zsh:$FPATH"
 # Sources
 source ~/.zsh/alias/k8s.zsh
 source ~/.zsh/alias/misc.zsh 
+source ~/.zsh/alias/chocoup.zsh
 source ~/.zsh/exports.zsh
 source ~/.config/op/plugins.sh # 1password
 source ~/.zsh/prompt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # has to be init at last
