@@ -35,4 +35,5 @@ Add your exports under exports.zsh, it is ignored by git. The reason is based on
 ## Alias
 All alias is managed under alias/, feel free to add / change the zsh files. A simple pull and re-source will sync the changes.
 
-
+## TODO
+- local env setup
