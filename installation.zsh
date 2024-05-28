@@ -28,6 +28,8 @@ brew install 1password-cli
 brew install zoxide
 brew install eza 
 brew install jq
+brew install direnv
+brew install asdf
 
 # Custom config
 ## diff-so-fancy

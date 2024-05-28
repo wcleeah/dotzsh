@@ -29,7 +29,10 @@ source ~/.zsh/alias/chocoup.zsh
 source ~/.zsh/exports.zsh
 source ~/.config/op/plugins.sh # 1password
 source ~/.zsh/prompt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # has to be init at last
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # Init
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
+eval "$(direnv hook zsh)"
+
