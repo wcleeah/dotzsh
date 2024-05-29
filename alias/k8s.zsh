@@ -76,3 +76,6 @@ klog() {
   fi
 }
 
+ksi() {
+  kubectl describe ingress ingress-api | grep $1
+}
