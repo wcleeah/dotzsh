@@ -1,5 +1,4 @@
 # installation script
-# supposedly .zshrc is already in place
 touch exports.zsh
 if [ ! -f ~/.zshrc ]; then
 	touch ~/.zshrc
@@ -30,6 +29,8 @@ brew install eza
 brew install jq
 brew install direnv
 brew install asdf
+
+source ~/.zshrc
 
 # Custom config
 ## diff-so-fancy
