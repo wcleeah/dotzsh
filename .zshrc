@@ -18,6 +18,9 @@ PROMPT=$PROMPT'%F{magenta}git:$(gitprompt) '
 ## time
 PROMPT=$PROMPT'%F{white}%D{%F %H:%M:%S} %{$reset_color%}'
 
+NEWLINE=$'\n'
+PROMPT=$PROMPT"${NEWLINE}"
+
 # Paths
 export PATH=/opt/homebrew/bin:$PATH
 export FPATH="~/.zsh/prompt/eza/completions/zsh:$FPATH"

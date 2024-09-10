@@ -13,5 +13,5 @@ assumeRole() {
 	echo "Updating kubeconfig"
 	aws eks update-kubeconfig --region ap-southeast-1 --name choco-up-staging --profile ar
 	aws eks update-kubeconfig --region ap-southeast-1 --name choco-up-production --profile ar
-	kcs
+        kubectl config use-context staging
 }
