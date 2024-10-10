@@ -9,4 +9,4 @@ bencode() {
   echo -n $1 | openssl base64
 }
 
-
+alias v="nvim"

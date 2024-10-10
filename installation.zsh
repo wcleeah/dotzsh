@@ -29,6 +29,7 @@ brew install eza
 brew install jq
 brew install direnv
 brew install asdf
+brew install ripgrep 
 
 source ~/.zshrc
 
