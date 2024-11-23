@@ -30,6 +30,11 @@ brew install jq
 brew install direnv
 brew install asdf
 brew install ripgrep 
+brew install --cask nikitabobko/tap/aerospace
+brew tap FelixKratz/formulae
+brew install borders
+brew tap FelixKratz/formulae
+brew install svim
 
 source ~/.zshrc
 
