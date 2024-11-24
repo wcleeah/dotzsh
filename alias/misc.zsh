@@ -10,3 +10,4 @@ bencode() {
 }
 
 alias v="nvim"
+alias a="atac -d $(pwd)"
