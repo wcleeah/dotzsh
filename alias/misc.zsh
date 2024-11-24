@@ -11,3 +11,19 @@ bencode() {
 
 alias v="nvim"
 alias a="atac -d $(pwd)"
+
+an() {
+    TARGET=$(find ~/Documents -type d -maxdepth 1 | fzf)
+    DIR_NAME=$(basename $TARGET)
+    CURR_WIN=$(aerospace list-windows --focused)
+    yq e -i ".windows[].tabs[0].title = \"$DIR_NAME (NVIM)\" | .windows[].tabs[1].title = \"$TARGET\" | .windows[].tabs[0].layout.cwd = \"$TARGET\" | .windows[].tabs[1].layout.cwd = \"$TARGET\"" ~/.warp/launch_configurations/lan.yaml
+    open "warp://launch/Lan"
+    until [[ "$(aerospace list-windows --focused)" != "$CURR_WIN" ]]; do sleep 1; done
+    aerospace move-node-to-workspace "$DIR_NAME"
+    aerospace workspace "$DIR_NAME"
+}
+
+aw() {
+    TARGET=$(aerospace list-workspaces --all --format %{workspace} | fzf)
+    aerospace workspace "$TARGET"
+}
