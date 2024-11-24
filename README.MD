@@ -1,4 +1,4 @@
-# CLI configuration (actually is for terminal) for me
+# TUI + ZSH + CLI Tool configuration
 
 ## Intended to use with
 - [warp](https://www.warp.dev/)
@@ -12,17 +12,9 @@
 ![prompt](prompt/prompt_example.png)
 
 ## Plugins
-All plugins for now are installed through brew:
-- [bat](https://github.com/sharkdp/bat)
-- [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy/tree/next)
-- [fzf](https://github.com/junegunn/fzf)
-- [kubectx](https://github.com/ahmetb/kubectx)
-- [wget](https://formulae.brew.sh/formula/wget)
-- [1password-cli](https://developer.1password.com/docs/cli/get-started/#install)
-- [zoxide](https://github.com/ajeetdsouza/zoxide)
+All plugins for now are installed through brew, see installation.zsh for full list
 
-
-## Installation
+# Installation
 1. git clone this repo into .zsh/
 2. git init and update all submodules
 3. Download warp
