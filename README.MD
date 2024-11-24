@@ -27,5 +27,11 @@ Add your exports under exports.zsh, it is ignored by git. The reason is based on
 ## Alias
 All alias is managed under alias/, feel free to add / change the zsh files. A simple pull and re-source will sync the changes.
 
+## Warp need to fix something before i can use the below
+- [atuin](https://docs.atuin.sh/)
+  - [bindkey in zsh does not work in warp](https://github.com/warpdotdev/Warp/issues/537)
+- [tmux](https://github.com/tmux/tmux/wiki/Getting-Started)
+  - [tmux is supported by warp, but all the warp features will be gone](https://github.com/warpdotdev/Warp/discussions/501)
+
 ## TODO
 - local env setup
