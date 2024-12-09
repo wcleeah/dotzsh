@@ -27,6 +27,7 @@ brew install 1password-cli
 brew install zoxide
 brew install eza 
 brew install jq
+brew install yq
 brew install direnv
 brew install asdf
 brew install ripgrep 
