@@ -13,7 +13,7 @@ PROMPT=$PROMPT' %F{blue}k8s:$(kube_ps1) '
 ## git
 ZSH_THEME_GIT_PROMPT_PREFIX="%F{white}["
 ZSH_THEME_GIT_PROMPT_SUFFIX="%F{white}]"
-PROMPT=$PROMPT'%F{magenta}git:$(gitprompt) '
+PROMPT=$PROMPT'%F{010}git:$(gitprompt) '
 
 ## time
 PROMPT=$PROMPT'%F{white}%D{%F %H:%M:%S} %{$reset_color%}'
@@ -39,4 +39,4 @@ source ~/.zsh/prompt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # has t
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
 eval "$(direnv hook zsh)"
-
+bindkey -v

@@ -18,6 +18,7 @@ source ~/.zshrc
 ## sidenote, the reason to not use Brewfile (brew bundle) is that
 ## more plugins will be installed after the installation by the user, and those plugin will not be reflected in the Brewfile
 ## which might make it hard to manage
+brew install ghostty
 brew install bat
 brew install diff-so-fancy
 brew install fzf
