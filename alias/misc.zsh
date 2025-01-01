@@ -4,7 +4,9 @@ alias ls="eza"
 alias o.="open ."
 alias c="clear"
 alias t="tmux-sessionizer"
+alias ts="tmux-session-switcher"
 alias n="nvim ."
+alias rs="source ~/.zshrc"
 
 bencode() {
   echo -n $1 | openssl base64

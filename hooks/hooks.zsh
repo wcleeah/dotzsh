@@ -3,11 +3,13 @@ autoload -Uz add-zsh-hook
 
 prompt_preexec() {
     prompt_prexec_realtime=${EPOCHREALTIME}
-    echo "Starts: $(date '+%Y-%m-%d %H:%M:%S')"
+    echo "Command Starts: $(date '+%Y-%m-%d %H:%M:%S')"
+    echo ""
 }
 
 prompt_precmd() {
-    echo "Ends: $(date '+%Y-%m-%d %H:%M:%S')"
+    echo ""
+    echo "Command Ends: $(date '+%Y-%m-%d %H:%M:%S')"
     if (( prompt_prexec_realtime )); then
         local -rF elapsed_realtime=$(( EPOCHREALTIME - prompt_prexec_realtime ))
         local -rF s=$(( elapsed_realtime%60 ))
