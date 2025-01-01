@@ -1,5 +1,7 @@
 # Prompt
+setopt nopromptbang prompt{cr,percent,sp,subst}
 source ~/.zsh/prompt/git-prompt/git-prompt.zsh
+source ~/.zsh/hooks/hooks.zsh
 ## pwd
 PROMPT="%F{magenta}%~"
 
