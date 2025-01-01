@@ -24,6 +24,7 @@ PROMPT=$PROMPT"${NEWLINE}"
 # Paths
 export PATH=/opt/homebrew/bin:$PATH
 export FPATH="~/.zsh/prompt/eza/completions/zsh:$FPATH"
+export PATH=$HOME/.zsh/scripts:$PATH
 
 # Sources
 setopt EXTENDED_GLOB
@@ -39,4 +40,6 @@ source ~/.zsh/prompt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # has t
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
 eval "$(direnv hook zsh)"
-bindkey -v
+eval "$(atuin init zsh)"
+bindkey jj vi-cmd-mode
+

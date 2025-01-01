@@ -4,6 +4,8 @@ alias cdi="zi"
 alias ls="eza"
 alias o.="open ."
 alias c="clear"
+alias t="tmux-sessionizer"
+alias n="nvim ."
 
 bencode() {
   echo -n $1 | openssl base64
