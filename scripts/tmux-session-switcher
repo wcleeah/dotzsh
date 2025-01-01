@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh 
+switch_to() {
+    tmux switch-client -t $1
+}
+
+selected=$(tmux list-sessions -F "#{session_name}" | fzf)
+
+if [[ -z $selected ]]; then
+    exit 0
+fi
+
+switch_to $selected
