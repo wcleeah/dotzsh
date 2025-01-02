@@ -1,3 +1,3 @@
-tmux new-window -dn shell 
+tmux new-window -d
 nvim .
 clear
