@@ -10,7 +10,7 @@
 - [git-prompt](https://github.com/woefe/git-prompt)
 - zsh native prompt time
 
-![prompt](prompt/prompt_example.png)
+![prompt](prompt/prompt.png)
 
 ## Plugins
 All plugins for now are installed through brew, see installation.zsh for full list
