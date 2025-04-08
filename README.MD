@@ -3,7 +3,7 @@
 ## Intended to use with
 - [ghostty](https://ghostty.org/)
 - zsh (macos native shell)
-- dotconfig
+- [dotconfig](https://github.com/wcleeah/dotconfig)
 
 ## Prompt 
 - [kube-ps1](https://github.com/jonmosco/kube-ps1)
