@@ -38,8 +38,7 @@ brew tap FelixKratz/formulae
 brew install borders
 brew tap FelixKratz/formulae
 brew install svim
-brew tap julien-cpsn/atac
-brew install atac
+brew install nvim
 
 source ~/.zshrc
 

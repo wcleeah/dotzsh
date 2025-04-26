@@ -2,10 +2,6 @@ alias k8sr="vi /Users/leewingcheung/.zsh/alias/k8s.zsh"
 alias refk8s="source /Users/leewingcheung/.zsh/alias/k8s.zsh"
 
 # kubectl related
-alias kcproduction="kubectl config use-context production"
-alias kcs="kubectl config use-context staging"
-alias ku="kubectl config set-context --current=true --namespace=uat"
-alias kp="kubectl config set-context --current=true --namespace=production"
 alias kgp="kubectl get pods"
 
 kesh() {
@@ -58,7 +54,7 @@ ked() {
 }
 
 kg() {
-  kubectl get $1
+  kubectl get $1 $2 -o=yaml
 }
 
 
@@ -74,8 +70,4 @@ klog() {
   else
     kubectl logs -f $(kgp | awk -v d=$1 '$0 ~ d{print $1; exit;}') -c $2 
   fi
-}
-
-ksi() {
-  kubectl describe ingress ingress-api | grep $1
 }

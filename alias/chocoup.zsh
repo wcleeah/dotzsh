@@ -15,3 +15,8 @@ assumeRole() {
 	aws eks update-kubeconfig --region ap-southeast-1 --name choco-up-production --profile ar
         kubectl config use-context staging
 }
+
+alias kcproduction="kubectl config use-context production"
+alias kcs="kubectl config use-context staging"
+alias ku="kubectl config set-context --current=true --namespace=uat"
+alias kp="kubectl config set-context --current=true --namespace=production"
