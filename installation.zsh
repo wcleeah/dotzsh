@@ -58,6 +58,8 @@ git config --global color.diff.old        "red bold"
 git config --global color.diff.new        "green bold"
 git config --global color.diff.whitespace "red reverse"
 
+## rerere for better rebase
+git config --global rerere.enabled true
 
 echo "All the auto configurable stuffs is installed, please config yourself for the following manual configuration"
 echo "1. 1password cli plugins for specific usecase https://developer.1password.com/docs/cli/shell-plugins/"
