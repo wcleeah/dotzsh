@@ -37,7 +37,6 @@ brew install --cask nikitabobko/tap/aerospace
 brew tap FelixKratz/formulae
 brew install borders
 brew tap FelixKratz/formulae
-brew install svim
 brew install nvim
 
 source ~/.zshrc
