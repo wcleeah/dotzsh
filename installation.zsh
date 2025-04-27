@@ -38,6 +38,7 @@ brew tap FelixKratz/formulae
 brew install borders
 brew tap FelixKratz/formulae
 brew install nvim
+brew install orbstack
 
 source ~/.zshrc
 
