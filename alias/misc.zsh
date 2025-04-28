@@ -8,8 +8,8 @@ alias ts="tmux-session-switcher"
 alias n="nvim ."
 alias rs="source ~/.zshrc"
 
-bencode() {
-  echo -n $1 | openssl base64
+b64e() {
+  echo -n $1 | openssl base64 -A
 }
 
 alias v="nvim"
