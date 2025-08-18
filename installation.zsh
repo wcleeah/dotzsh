@@ -41,6 +41,7 @@ brew install orbstack
 brew install libpq
 brew install tmux
 brew install lazygit
+brew install sst/tap/opencode
 # gvm?
 # https://github.com/moovweb/gvm
 
