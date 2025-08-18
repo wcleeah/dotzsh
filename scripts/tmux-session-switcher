@@ -1,9 +1,14 @@
 #!/usr/bin/env zsh 
 switch_to() {
-    tmux switch-client -t $1
+    if [[ -z $TMUX ]]; then
+        tmux attach-session -t $1
+    else
+        tmux switch-client -t $1
+    fi
 }
 
-selected=$(tmux list-sessions -F "#{session_name}" | fzf)
+
+selected=$(tmux list-sessions -F "#{session_name}" | fzf --layout reverse)
 
 if [[ -z $selected ]]; then
     exit 0

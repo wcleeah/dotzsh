@@ -34,6 +34,7 @@ for file in ~/.zsh/alias/**/*.zsh(.N); do
   source "$file"
 done
 source ~/.zsh/exports.zsh
+source ~/.zsh/keymap.zsh
 source ~/.config/op/plugins.sh # 1password
 source ~/.zsh/prompt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # has to be init at last
 . /opt/homebrew/opt/asdf/libexec/asdf.sh

@@ -3,7 +3,7 @@ touch exports.zsh
 if [ ! -f ~/.zshrc ]; then
 	touch ~/.zshrc
 fi
-echo "source .zsh/.zshrc" >> ~/.zshrc
+echo "source ~/.zsh/.zshrc" >> ~/.zshrc
 
 # Prompt
 git submodule update --init
@@ -36,9 +36,13 @@ brew install ripgrep
 brew install --cask nikitabobko/tap/aerospace
 brew tap FelixKratz/formulae
 brew install borders
-brew tap FelixKratz/formulae
 brew install nvim
 brew install orbstack
+brew install libpq
+brew install tmux
+brew install lazygit
+# gvm?
+# https://github.com/moovweb/gvm
 
 source ~/.zshrc
 
