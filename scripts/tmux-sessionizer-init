@@ -1,4 +1,3 @@
-tmux new-window -d -n "opencode" "source ~/.zshrc && opencode"
 tmux new-window -d
 nvim .
 clear

@@ -23,7 +23,6 @@ brew install atuin
 brew install bat
 brew install diff-so-fancy
 brew install fzf
-brew install kubectx
 brew install wget
 brew install 1password-cli
 brew install zoxide
@@ -33,15 +32,14 @@ brew install yq
 brew install direnv
 brew install asdf
 brew install ripgrep 
-brew install --cask nikitabobko/tap/aerospace
 brew tap FelixKratz/formulae
 brew install borders
+brew services start borders
+brew install --cask nikitabobko/tap/aerospace
 brew install nvim
-brew install orbstack
-brew install libpq
 brew install tmux
-brew install lazygit
 brew install sst/tap/opencode
+brew install oven-sh/bun/bun
 # gvm?
 # https://github.com/moovweb/gvm
 
