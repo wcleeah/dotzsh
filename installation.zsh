@@ -40,6 +40,7 @@ brew install nvim
 brew install tmux
 brew install sst/tap/opencode
 brew install oven-sh/bun/bun
+brew install fnm
 # gvm?
 # https://github.com/moovweb/gvm
 

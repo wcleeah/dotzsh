@@ -45,5 +45,6 @@ eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
 eval "$(direnv hook zsh)"
 eval "$(atuin init zsh)"
+eval "$(fnm env --use-on-cd --shell zsh)"
 bindkey jj vi-cmd-mode
 

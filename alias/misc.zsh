@@ -7,6 +7,7 @@ alias t="tmux-sessionizer"
 alias ts="tmux-session-switcher"
 alias n="nvim ."
 alias rs="source ~/.zshrc"
+alias j="just"
 
 b64e() {
   echo -n $1 | openssl base64 -A
