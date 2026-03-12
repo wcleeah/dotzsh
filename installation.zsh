@@ -34,7 +34,6 @@ brew install asdf
 brew install ripgrep 
 brew tap FelixKratz/formulae
 brew install borders
-brew services start borders
 brew install --cask nikitabobko/tap/aerospace
 brew install nvim
 brew install tmux

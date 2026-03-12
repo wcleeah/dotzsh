@@ -1,2 +1,2 @@
-bindkey -s "^f" "t\n"
-bindkey -s "^n" "ts\n"
+bindkey -s "^f" "ts\n"
+bindkey -s "^n" "t\n"
