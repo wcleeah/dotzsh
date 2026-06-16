@@ -8,40 +8,41 @@ echo "source ~/.zsh/.zshrc" >> ~/.zshrc
 # Prompt
 git submodule update --init
 
-# Install brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 # Source all the alias and exports
 source ~/.zshrc
 
-# Sync brew plugins
-## sidenote, the reason to not use Brewfile (brew bundle) is that
-## more plugins will be installed after the installation by the user, and those plugin will not be reflected in the Brewfile
-## which might make it hard to manage
-brew install --cask ghostty
-brew install atuin
-brew install bat
-brew install diff-so-fancy
-brew install fzf
-brew install wget
-brew install 1password-cli
-brew install zoxide
-brew install eza 
-brew install jq
-brew install yq
-brew install direnv
-brew install asdf
-brew install ripgrep 
-brew tap FelixKratz/formulae
-brew install borders
-brew install --cask nikitabobko/tap/aerospace
-brew install nvim
-brew install tmux
-brew install sst/tap/opencode
-brew install oven-sh/bun/bun
-brew install fnm
-# gvm?
-# https://github.com/moovweb/gvm
+# Sync  plugins
+# atuin
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+# zoxide
+curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+# eza
+sudo apt update
+sudo apt install -y gpg
+sudo mkdir -p /etc/apt/keyrings
+wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
+echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | sudo tee /etc/apt/sources.list.d/gierens.list
+sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
+sudo apt update
+sudo apt install -y eza
+
+# nvim
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo rm -rf /opt/nvim-linux-x86_64
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+
+# Opencode
+curl -fsSL https://opencode.ai/install | bash
+
+# FNM
+curl -fsSL https://fnm.vercel.app/install | bash
+
+# By apt
+sudo apt update
+sudo apt -y install bat fzf jq ripgrep tmux gh
+
+# snap
+sudo snap install yq
 
 source ~/.zshrc
 
@@ -66,5 +67,3 @@ git config --global color.diff.whitespace "red reverse"
 git config --global rerere.enabled true
 
 echo "All the auto configurable stuffs is installed, please config yourself for the following manual configuration"
-echo "1. 1password cli plugins for specific usecase https://developer.1password.com/docs/cli/shell-plugins/"
-echo "2. aws cli https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html"

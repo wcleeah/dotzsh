@@ -1,19 +1,16 @@
 # TUI + ZSH + CLI Tool configuration
 
 ## Intended to use with
-- [ghostty](https://ghostty.org/)
 - zsh (macos native shell)
 - [dotconfig](https://github.com/wcleeah/dotconfig)
 
 ## Prompt 
-- [kube-ps1](https://github.com/jonmosco/kube-ps1)
 - [git-prompt](https://github.com/woefe/git-prompt)
 - zsh native prompt time
 
 ![prompt](prompt/prompt.png)
 
 ## Plugins
-All plugins for now are installed through brew, see installation.zsh for full list
 
 # Installation
 1. git clone this repo into .zsh/
