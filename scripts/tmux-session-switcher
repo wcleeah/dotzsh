@@ -8,7 +8,7 @@ switch_to() {
 }
 
 
-selected=$(tmux list-sessions -F "#{session_name}" | fzf --layout reverse)
+selected=$(tmux list-sessions -F "#{session_last_attached} #{session_name}" | sort -rn | cut -d' ' -f2- | fzf --layout reverse)
 
 if [[ -z $selected ]]; then
     exit 0

@@ -39,6 +39,7 @@ source ~/.config/op/plugins.sh # 1password
 source ~/.zsh/prompt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # has to be init at last
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 export XDG_CONFIG_HOME="$HOME/.config"
+export EDITOR=vim
 
 # Init
 eval "$(zoxide init zsh)"
@@ -47,4 +48,3 @@ eval "$(direnv hook zsh)"
 eval "$(atuin init zsh)"
 eval "$(fnm env --use-on-cd --shell zsh)"
 bindkey jj vi-cmd-mode
-
